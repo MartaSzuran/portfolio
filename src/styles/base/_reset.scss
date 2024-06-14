@@ -1,19 +1,21 @@
 @use '../abstracts/colors' as *;
 
-* {
+body {
   padding: 0;
   margin: 0;
-  height: fit-content;
+}
+
+.theme {
   min-height: 100vh;
   width: 100%;
-}
 
-.light {
-  color: $grey-8;
-  background-color: $grey-0;
-}
+  &.light {
+    color: $grey-8;
+    background-color: $grey-0;
+  }
 
-.dark {
-  color: $grey-1;
-  background-color: $grey-8;
+  &.dark {
+    color: $grey-1;
+    background-color: $grey-8;
+  }
 }
