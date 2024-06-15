@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import Header from './components/Header/Header';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import BedtimeIcon from '@mui/icons-material/Bedtime';
 import './styles/_main.scss';
 
 function App() {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState<string>('dark');
 
   const handleThemeSwitchClick = () => {
     if (theme === 'light') {
@@ -17,45 +18,7 @@ function App() {
   return (
     <>
       <div className={`theme ${theme}`}>
-        <header className={`${theme}-reverse`}>
-          <img
-            src={theme === 'dark' ? 'assets\\LogoMSzuran.png' : 'assets\\LogoMSzuranLight.png'}
-            alt='logo'
-            className={`navimage ${theme}-reverse`}
-          />
-          <nav>my nav</nav>
-          <div className='switchContainer'>
-            <input type='checkbox' id='darkmode-toggle' className={`${theme}`} />
-            <label
-              htmlFor='darkmode-toggle'
-              className={`${theme}`}
-              onClick={() => handleThemeSwitchClick()}
-            >
-              {theme === 'dark' ? (
-                <BedtimeIcon
-                  sx={{
-                    fontSize: '15px',
-                    position: 'absolute',
-                    left: '16px',
-                    zIndex: '9',
-                    color: '#656565',
-                    top: '0.5px',
-                  }}
-                />
-              ) : (
-                <WbSunnyIcon
-                  sx={{
-                    fontSize: '15px',
-                    position: 'absolute',
-                    zIndex: '9',
-                    color: '#656565',
-                    top: '0.5px',
-                  }}
-                />
-              )}
-            </label>
-          </div>
-        </header>
+        <Header theme={theme} handleThemeSwitchClick={handleThemeSwitchClick} />
         <main></main>
         <footer></footer>
       </div>
