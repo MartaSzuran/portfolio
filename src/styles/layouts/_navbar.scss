@@ -1,9 +1,10 @@
 header {
+  @extend .light, .dark-reverse, .dark, .light-reverse;
   width: 100%;
-  height: 50px;
+  height: 31px;
 }
 
 .navimage {
-  width: 60px;
+  width: 30px;
   height: 30px;
 }

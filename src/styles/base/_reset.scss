@@ -1,4 +1,5 @@
-@use '../abstracts/colors' as *;
+@use '../mixins/theme' as *;
+@use '../variables/theme' as *;
 
 body {
   padding: 0;
@@ -8,14 +9,14 @@ body {
 .theme {
   min-height: 100vh;
   width: 100%;
+}
 
-  &.light {
-    color: $grey-8;
-    background-color: $grey-0;
-  }
+.light,
+.dark-reverse {
+  @include theme-change($theme-light...);
+}
 
-  &.dark {
-    color: $grey-1;
-    background-color: $grey-8;
-  }
+.dark,
+.light-reverse {
+  @include theme-change($theme-dark...);
 }

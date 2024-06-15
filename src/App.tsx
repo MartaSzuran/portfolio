@@ -4,8 +4,8 @@ function App() {
   return (
     <>
       <div className='theme dark'>
-        <header>
-          <img src='public\assets\LogoWithTitleMSzuran.png' alt='logo' className='navimage' />
+        <header className='dark-reverse'>
+          <img src='assets\LogoMSzuran.png' alt='logo' className='navimage light' />
           <nav></nav>
         </header>
         <main></main>
