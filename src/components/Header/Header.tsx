@@ -5,7 +5,6 @@ type HeaderProps = {
   theme?: string;
   handleThemeSwitchClick: () => void;
 };
-
 const Header = ({ theme = 'dark', handleThemeSwitchClick }: HeaderProps) => {
   return (
     <header className={`${theme}-reverse`}>
@@ -14,7 +13,7 @@ const Header = ({ theme = 'dark', handleThemeSwitchClick }: HeaderProps) => {
         alt='logo'
         className={`navimage ${theme}-reverse`}
       />
-      <nav>my nav</nav>
+      <h1 className='websiteTitle'>Marta Szuran Fullstack Developer</h1>
       <div className='switchContainer'>
         <input type='checkbox' id='darkmode-toggle' className={`${theme}`} />
         <label

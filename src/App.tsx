@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Header from './components/Header/Header';
-import WbSunnyIcon from '@mui/icons-material/WbSunny';
-import BedtimeIcon from '@mui/icons-material/Bedtime';
+import SubHeader from './components/SubHeader/SubHeader';
 import './styles/_main.scss';
 
 function App() {
@@ -19,7 +18,9 @@ function App() {
     <>
       <div className={`theme ${theme}`}>
         <Header theme={theme} handleThemeSwitchClick={handleThemeSwitchClick} />
-        <main></main>
+        <main>
+          <SubHeader />
+        </main>
         <footer></footer>
       </div>
     </>
