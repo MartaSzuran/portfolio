@@ -39,6 +39,12 @@
             "options": {
                 "parser": "sass"
             }
+        },
+        {
+            "files": "*.json",
+            "options": {
+                "parser": "json"
+            }
         }
     ]
 }

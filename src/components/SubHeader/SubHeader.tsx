@@ -1,9 +1,14 @@
+import { useContext } from 'react';
+import { LanguageContext } from '../../App';
+
 const SubHeader = () => {
+  const lang = useContext(LanguageContext);
+
   return (
     <section className='subheaderSection'>
       <div className='subheaderTitle'>
-        <h1>Build your dream website or webapp!</h1>
-        <p>I am proffesional fullstack developer who can help you with your idea.</p>
+        <h1>{lang[0].subheaderTitle}</h1>
+        <p>{lang[0].subheaderParagraph}</p>
       </div>
       <img
         src='public\assets\MartaSzuranGrey.JPG'
