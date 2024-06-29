@@ -52,3 +52,23 @@ input {
 input:checked + label::after {
   transform: translateX(-78%);
 }
+
+.plLang {
+  font-size: 11px;
+  position: absolute;
+  left: 18px;
+  z-index: 9;
+  color: #656565;
+  top: 1.5px;
+  font-weight: 700;
+}
+
+.enLang {
+  font-size: 11px;
+  position: absolute;
+  left: 1px;
+  z-index: 9;
+  color: #656565;
+  top: 1.5px;
+  font-weight: 700;
+}

@@ -4,9 +4,11 @@ import BedtimeIcon from '@mui/icons-material/Bedtime';
 type HeaderProps = {
   theme?: string;
   handleThemeSwitchClick: () => void;
+  lang?: string;
+  handleLangSwitchClick: () => void;
 };
 
-const Header = ({ theme = 'dark', handleThemeSwitchClick }: HeaderProps) => {
+const Header = ({ theme, handleThemeSwitchClick, lang, handleLangSwitchClick }: HeaderProps) => {
   return (
     <header className={`${theme}-reverse`}>
       <img
@@ -14,37 +16,49 @@ const Header = ({ theme = 'dark', handleThemeSwitchClick }: HeaderProps) => {
         alt='logo'
         className={`navimage ${theme}-reverse`}
       />
-      <nav>my nav</nav>
-      <div className='switchContainer'>
-        <input type='checkbox' id='darkmode-toggle' className={`${theme}`} />
-        <label
-          htmlFor='darkmode-toggle'
-          className={`${theme}`}
-          onClick={() => handleThemeSwitchClick()}
-        >
-          {theme === 'dark' ? (
-            <BedtimeIcon
-              sx={{
-                fontSize: '15px',
-                position: 'absolute',
-                left: '16px',
-                zIndex: '9',
-                color: '#656565',
-                top: '0.5px',
-              }}
-            />
-          ) : (
-            <WbSunnyIcon
-              sx={{
-                fontSize: '15px',
-                position: 'absolute',
-                zIndex: '9',
-                color: '#656565',
-                top: '0.5px',
-              }}
-            />
-          )}
-        </label>
+      <h1 className='websiteTitle'>Marta Szuran Fullstack Developer</h1>
+      <div className='switchesContainer'>
+        <div className='switchContainer'>
+          <input type='checkbox' id='language-toggle' />
+          <label htmlFor='language-toggle' onClick={() => handleLangSwitchClick()}>
+            {lang === 'pl' ? (
+              <span className='plLang'>Pl</span>
+            ) : (
+              <span className='enLang'>En</span>
+            )}
+          </label>
+        </div>
+        <div className='switchContainer'>
+          <input type='checkbox' id='darkmode-toggle' className={`${theme}`} />
+          <label
+            htmlFor='darkmode-toggle'
+            className={`${theme}`}
+            onClick={() => handleThemeSwitchClick()}
+          >
+            {theme === 'dark' ? (
+              <BedtimeIcon
+                sx={{
+                  fontSize: '15px',
+                  position: 'absolute',
+                  left: '16px',
+                  zIndex: '9',
+                  color: '#656565',
+                  top: '0.5px',
+                }}
+              />
+            ) : (
+              <WbSunnyIcon
+                sx={{
+                  fontSize: '15px',
+                  position: 'absolute',
+                  zIndex: '9',
+                  color: '#656565',
+                  top: '0.5px',
+                }}
+              />
+            )}
+          </label>
+        </div>
       </div>
     </header>
   );
