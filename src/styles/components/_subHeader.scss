@@ -1,6 +1,6 @@
 .subheaderSection {
   width: inherit;
-  padding: 5px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -10,6 +10,11 @@
   h1 {
     text-align: center;
     margin-bottom: 22px;
+  }
+
+  p {
+    margin: auto;
+    width: 90%;
   }
 }
 

@@ -9,10 +9,11 @@ const SubHeader = () => {
       <div className='subheaderTitle'>
         <h1>{lang[0].subheaderTitle}</h1>
         <p>{lang[0].subheaderParagraph}</p>
+        <button className='contactmeButton'>{lang[0].contactmeButton}</button>
       </div>
       <img
-        src='public\assets\MartaSzuranGrey.JPG'
-        alt='Marta Szuran image'
+        src='public\assets\joyfullWithComputer.jpg'
+        alt='Happy customer image'
         className='subheaderImage'
       />
     </section>

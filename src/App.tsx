@@ -1,6 +1,7 @@
 import { useState, useEffect, createContext } from 'react';
 import Header from './components/Header/Header';
 import SubHeader from './components/SubHeader/SubHeader';
+import BenefitsSection from './components/BenefitsSection/BenefitsSection';
 import en from './translations/en/en.json';
 import pl from './translations/pl/pl.json';
 import './styles/_main.scss';
@@ -8,7 +9,12 @@ import './styles/_main.scss';
 interface Language {
   subheaderTitle: string;
   subheaderParagraph: string;
+  contactmeButton: string;
+  benefitClient: string;
+  benefitBusinessCard: string;
+  benefitTimesaver: string;
 }
+
 export const ThemeContext = createContext('dark');
 export const LanguageContext = createContext<Language[]>([]);
 
@@ -20,6 +26,10 @@ function App() {
       subheaderTitle: 'Stworzę Twoją wymarzoną stronę bądź aplikację internetową!',
       subheaderParagraph:
         'Jestem profesjonalnym fullstack developerem który wprowadzi w życie Twój pomysł.',
+      contactmeButton: 'ROZPOCZNIJ WSPÓŁPRACĘ',
+      benefitClient: 'Więcej klientów',
+      benefitBusinessCard: 'Nowoczesna wizytówka',
+      benefitTimesaver: 'Oszczędność czasu',
     },
   ]);
 
@@ -59,6 +69,7 @@ function App() {
           />
           <main>
             <SubHeader />
+            <BenefitsSection />
           </main>
           <footer></footer>
         </div>
