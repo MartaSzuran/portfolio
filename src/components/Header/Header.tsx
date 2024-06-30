@@ -10,17 +10,26 @@ type HeaderProps = {
 
 const Header = ({ theme, handleThemeSwitchClick, lang, handleLangSwitchClick }: HeaderProps) => {
   return (
-    <header className={`${theme}-reverse`}>
-      <img
-        src={theme === 'dark' ? 'assets\\LogoMSzuran.png' : 'assets\\LogoMSzuranLight.png'}
-        alt='logo'
-        className={`navimage ${theme}-reverse`}
-      />
-      <h1 className='websiteTitle'>Marta Szuran Fullstack Developer</h1>
+    <header className={`${theme}`}>
+      <div className='headerLogo'>
+        <img
+          src={theme === 'light' ? 'assets\\LogoMSzuran.png' : 'assets\\LogoMSzuranLight.png'}
+          alt='logo'
+          className={`navimage ${theme}`}
+        />
+        <div className='logoName'>
+          <p className='websiteTitle'>Marta</p>
+          <p className='websiteTitle'>Szuran</p>
+        </div>
+      </div>
       <div className='switchesContainer'>
         <div className='switchContainer'>
-          <input type='checkbox' id='language-toggle' />
-          <label htmlFor='language-toggle' onClick={() => handleLangSwitchClick()}>
+          <input type='checkbox' id='language-toggle' className={`${theme}`} />
+          <label
+            htmlFor='language-toggle'
+            className={`${theme}-reverse`}
+            onClick={() => handleLangSwitchClick()}
+          >
             {lang === 'pl' ? (
               <span className='plLang'>Pl</span>
             ) : (
@@ -32,7 +41,7 @@ const Header = ({ theme, handleThemeSwitchClick, lang, handleLangSwitchClick }: 
           <input type='checkbox' id='darkmode-toggle' className={`${theme}`} />
           <label
             htmlFor='darkmode-toggle'
-            className={`${theme}`}
+            className={`${theme}-reverse`}
             onClick={() => handleThemeSwitchClick()}
           >
             {theme === 'dark' ? (

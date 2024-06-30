@@ -1,10 +1,20 @@
 [
   {
-    "subheaderTitle": "I will create your dream website or webapp!",
-    "subheaderParagraph": "I am profesional fullstack developer who can help you with your idea.",
-    "contactmeButton": "START WORKING WITH ME",
+    "subheaderTitle": "I will create your dream website!",
+    "subheaderParagraph": "I am profesionals who can help you with your idea.",
+    "contactmeButton": "I WANT A WEBSITE",
     "benefitClient": "More clients",
     "benefitBusinessCard": "Modern business card",
-    "benefitTimesaver": "Time saving"
+    "benefitTimesaver": "Time saving",
+    "problemSolutionHeader": "Do you want to have your own website but don't know where to start?",
+    "problemSolutionParagraph": "Nowadays, there are many possibilities to create your website, but unfortunately when you start looking for information, it turns out that it is a very complex problem! Words such as domain, SEO or HTML will be mentioned.  You need to spend a lot of time to understand how websites are positioned by search engines, which websites attract more customers and why, or what responsiveness is... Don't worry, I'll help you!",
+    "problemSolutionListTitle": "By working with me, you will get a website:",
+    "problemSolutionBullet1": "built according to the latest design trends",
+    "problemSolutionBullet2": "functional for your client",
+    "problemSolutionBullet3": "containing the latest psychological techniques to retain customers and increase the chance of contacting you",
+    "problemSolutionBullet4": "looking exactly the way you want",
+    "problemSolutionBullet5": "in several languages",
+    "problemSolutionBullet6": "in dark and light mode",
+    "problemSolutionBullet7": "accessible to people with disabilities"
   }
 ]

@@ -1,5 +1,28 @@
-.websiteTitle {
-  font-size: 18px;
+@use '../abstracts/colors' as *;
+
+header {
+  position: fixed;
+}
+
+.headerLogo {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.logoName {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  width: 30px;
+  letter-spacing: 0.4px;
+
+  p {
+    &::first-letter {
+      color: $orange-3;
+    }
+  }
 }
 
 .switchesContainer {
