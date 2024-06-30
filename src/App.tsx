@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import SubHeader from './components/SubHeader/SubHeader';
 import BenefitsSection from './components/BenefitsSection/BenefitsSection';
 import ProblemSolutionSection from './components/ProblemSolutionSection/ProblemSolutionSection';
+import FAQSection from './components/FAQSection/FAQSection';
 import en from './translations/en/en.json';
 import pl from './translations/pl/pl.json';
 import './styles/_main.scss';
@@ -24,6 +25,7 @@ interface Language {
   problemSolutionBullet5: string;
   problemSolutionBullet6: string;
   problemSolutionBullet7: string;
+  FAQTitle: string;
 }
 
 export const ThemeContext = createContext('dark');
@@ -53,6 +55,7 @@ function App() {
       problemSolutionBullet5: 'w kilku językach',
       problemSolutionBullet6: 'w trybie ciemnym i jasnym',
       problemSolutionBullet7: 'dostępną dla osób z niepełnosprawnościami',
+      FAQTitle: 'Często zadawane pytania',
     },
   ]);
 
@@ -94,6 +97,7 @@ function App() {
             <SubHeader />
             <BenefitsSection />
             <ProblemSolutionSection />
+            <FAQSection />
           </main>
           <footer></footer>
         </div>
