@@ -1,5 +1,5 @@
 @use '../abstracts/colors' as *;
 
 //first font-color then bg -olor
-$theme-dark: $grey-1, $grey-8;
-$theme-light: $grey-8, $pale-red-0;
+$theme-dark: $orange-0, $grey-8;
+$theme-light: $grey-8, $orange-0;

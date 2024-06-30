@@ -2,6 +2,7 @@ import { useState, useEffect, createContext } from 'react';
 import Header from './components/Header/Header';
 import SubHeader from './components/SubHeader/SubHeader';
 import BenefitsSection from './components/BenefitsSection/BenefitsSection';
+import ProblemSolutionSection from './components/ProblemSolutionSection/ProblemSolutionSection';
 import en from './translations/en/en.json';
 import pl from './translations/pl/pl.json';
 import './styles/_main.scss';
@@ -13,6 +14,16 @@ interface Language {
   benefitClient: string;
   benefitBusinessCard: string;
   benefitTimesaver: string;
+  problemSolutionHeader: string;
+  problemSolutionParagraph: string;
+  problemSolutionListTitle: string;
+  problemSolutionBullet1: string;
+  problemSolutionBullet2: string;
+  problemSolutionBullet3: string;
+  problemSolutionBullet4: string;
+  problemSolutionBullet5: string;
+  problemSolutionBullet6: string;
+  problemSolutionBullet7: string;
 }
 
 export const ThemeContext = createContext('dark');
@@ -30,6 +41,18 @@ function App() {
       benefitClient: 'Więcej klientów',
       benefitBusinessCard: 'Nowoczesna wizytówka',
       benefitTimesaver: 'Oszczędność czasu',
+      problemSolutionHeader: 'Chcesz mieć swoją stronę internetową ale nie wiesz od czego zacząć?',
+      problemSolutionParagraph:
+        'Obecnie jest wiele możliwości, aby stworzyć swoją stronę internetową, niestety gdy zaczynasz szukać informacji, okazuje się, że jest to bardzo złożony problem! Padną takie słowa jak domena, SEO, wordpress czy HTML. Zawsze można skorzystać z kreatorów stron www, ale często są koszty ukryte i nie ma swobody w designie. Trzeba poświęcić dużo czasu, żeby zrozumieć jak są pozycjonowane strony internetowe przez wyszukiwarki, które strony przyciągają więcej klientów i dlaczego, lub co to responsywność... Nie martw się pomogę Ci!',
+      problemSolutionListTitle: 'Dzięki wspólpracy ze mną uzyskasz stronę internetową:',
+      problemSolutionBullet1: 'zbudowaną według najnowszych trendów designerskich',
+      problemSolutionBullet2: 'funkcjonalną dla Twojego klienta',
+      problemSolutionBullet3:
+        'zawierającą najnowsze techniki psychologiczne w celu utrzymania klienta i zwiększenia szansy na skontaktowanie się właśnie z Tobą',
+      problemSolutionBullet4: 'wyglądającą dokładnie tak jak chcesz',
+      problemSolutionBullet5: 'w kilku językach',
+      problemSolutionBullet6: 'w trybie ciemnym i jasnym',
+      problemSolutionBullet7: 'dostępną dla osób z niepełnosprawnościami',
     },
   ]);
 
@@ -70,6 +93,7 @@ function App() {
           <main>
             <SubHeader />
             <BenefitsSection />
+            <ProblemSolutionSection />
           </main>
           <footer></footer>
         </div>

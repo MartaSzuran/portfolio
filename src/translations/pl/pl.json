@@ -1,10 +1,20 @@
 [
   {
-    "subheaderTitle": "Stworzę Twoją wymarzoną stronę bądź aplikację internetową!",
-    "subheaderParagraph": "Jestem profesjonalnym fullstack developerem, który wprowadzi w życie Twój pomysł.",
-    "contactmeButton": "ROZPOCZNIJ WSPÓŁPRACĘ",
+    "subheaderTitle": "Stworzę Twoją wymarzoną stronę internetową!",
+    "subheaderParagraph": "Jestem profesjonalistą, który wprowadzi w życie Twój pomysł.",
+    "contactmeButton": "CHCĘ STRONĘ INTERNETOWĄ",
     "benefitClient": "Więcej klientów",
     "benefitBusinessCard": "Nowoczesna wizytówka",
-    "benefitTimesaver": "Oszczędność czasu"
+    "benefitTimesaver": "Oszczędność czasu",
+    "problemSolutionHeader": "Chcesz mieć swoją stronę internetową ale nie wiesz od czego zacząć?",
+    "problemSolutionParagraph": "Obecnie jest wiele możliwości, aby stworzyć swoją stronę internetową, niestety gdy zaczynasz szukać informacji, okazuje się, że jest to bardzo złożony problem! Padną takie słowa jak domena, SEO czy HTML.  Trzeba poświęcić dużo czasu, żeby zrozumieć jak są pozycjonowane strony internetowe przez wyszukiwarki, które strony przyciągają więcej klientów i dlaczego, lub co to responsywność... Nie martw się pomogę Ci!",
+    "problemSolutionListTitle": "Dzięki wspólpracy ze mną uzyskasz stronę internetową:",
+    "problemSolutionBullet1": "zbudowaną według najnowszych trendów designerskich",
+    "problemSolutionBullet2": "funkcjonalną dla Twojego klienta",
+    "problemSolutionBullet3": "zawierającą najnowsze techniki psychologiczne w celu utrzymania klienta i zwiększenia szansy na skontaktowanie się właśnie z Tobą",
+    "problemSolutionBullet4": "wyglądającą dokładnie tak jak chcesz",
+    "problemSolutionBullet5": "w kilku językach",
+    "problemSolutionBullet6": "w trybie ciemnym i jasnym",
+    "problemSolutionBullet7": "dostępną dla osób z niepełnosprawnościami"
   }
 ]
