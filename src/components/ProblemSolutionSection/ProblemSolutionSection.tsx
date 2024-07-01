@@ -1,6 +1,8 @@
 import { useContext } from 'react';
 import { LanguageContext } from '../../App';
 import { ThemeContext } from '../../App';
+import ShapedSectionDividerDark from '../ShapedSectionDividerDark/ShapedSectionDividerDark';
+import ShapedSectionDividerLight from '../ShapedSectionDividerLight/ShapedSectionDividerLight';
 
 const ProblemSolutionSection = () => {
   const lang = useContext(LanguageContext);
@@ -8,6 +10,7 @@ const ProblemSolutionSection = () => {
 
   return (
     <section className={`${theme}-reverse`}>
+      {theme === 'light' ? <ShapedSectionDividerLight /> : <ShapedSectionDividerDark />}
       <div className='problemSolutionSection'>
         <h2>{lang[0].problemSolutionHeader}</h2>
         <p>{lang[0].problemSolutionParagraph}</p>

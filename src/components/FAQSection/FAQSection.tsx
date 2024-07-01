@@ -1,6 +1,8 @@
 import { useContext, useState } from 'react';
 import { LanguageContext } from '../../App';
 import { ThemeContext } from '../../App';
+import ShapedSectionDividerLight from '../ShapedSectionDividerLight/ShapedSectionDividerLight';
+import ShapedSectionDividerDark from '../ShapedSectionDividerDark/ShapedSectionDividerDark';
 
 const FAQSection = () => {
   const lang = useContext(LanguageContext);
@@ -32,6 +34,7 @@ const FAQSection = () => {
 
   return (
     <section className={`${theme}`}>
+      {theme === 'light' ? <ShapedSectionDividerDark /> : <ShapedSectionDividerLight />}
       <div className='FQASection'>
         <h2>{lang[0].FAQTitle}</h2>
         <div

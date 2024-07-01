@@ -4,6 +4,7 @@ import SubHeader from './components/SubHeader/SubHeader';
 import BenefitsSection from './components/BenefitsSection/BenefitsSection';
 import ProblemSolutionSection from './components/ProblemSolutionSection/ProblemSolutionSection';
 import FAQSection from './components/FAQSection/FAQSection';
+import ShapedSectionDivider from './components/ShapedSectionDividerDark/ShapedSectionDividerDark';
 import en from './translations/en/en.json';
 import pl from './translations/pl/pl.json';
 import './styles/_main.scss';

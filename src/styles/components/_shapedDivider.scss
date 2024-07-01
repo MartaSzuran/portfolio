@@ -1,0 +1,25 @@
+@use '../abstracts/colors' as *;
+
+.custom-shape-divider-top-1719814030 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1719814030 svg {
+  position: relative;
+  display: block;
+  width: calc(104% + 1.3px);
+  height: 39px;
+}
+
+.custom-shape-divider-top-1719814030 .shape-fill {
+  &.dark {
+    fill: $grey-8;
+  }
+  &.light {
+    fill: $orange-0;
+  }
+}
